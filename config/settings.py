@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'board', # user information and dashboard
     'category',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+
+# Using custom user model
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
@@ -127,3 +131,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#media files configurations
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/'media'

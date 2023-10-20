@@ -102,6 +102,34 @@
       </div>
     </section><!-- End Cta Section -->
 
+
+    <!-- ======= Products Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title pt-5" data-aos="fade-up">
+          <h2>Our Products</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+          {% for category in categories %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{category.cat_image.url}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{category.category_name}}</h4>
+                <p>store link</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/portfolio-1.jpg'%}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </section><!-- End Services Section -->
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services ">
       <div class="container">

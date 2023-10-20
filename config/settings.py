@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'board', # user information and dashboard
     'category',
     'accounts',
+    'store',
 ]
 
 MIDDLEWARE = [

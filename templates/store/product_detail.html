@@ -1,0 +1,133 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="breadcrumb-hero">
+        <div class="container">
+          <div class="breadcrumb-hero">
+            <h2>Store</h2>
+            <p>저희가 직접 사용하고 있는 제품들을 판매 하고 있습니다. </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li>Store</li>
+        </ol>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Store Section ======= -->
+    <section class="blog" id="blog">
+        <div class="container">
+        
+        <!-- ============================ COMPONENT 1 ================================= -->
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <aside class="col-md-6">
+                    <article class="entry entry-single"> 
+                        <div class="img-big-wrap">
+                            <a href="#"><img src="./images/items/12.jpg"></a>
+                        </div> <!-- img-big-wrap.// -->
+                    </article> <!-- gallery-wrap .end// -->
+                </aside>
+                <main class="col-md-6 border-left">
+                    <article class="content-body">
+                        <h2 class="title">해어밴드</h2>
+                            <div class="mb-3"> 
+                                <var class="price h4">3000원</var> 
+                            </div> 
+                            <p> 간편하고 사용하기 좋은 헤어밴드 입니다. </p>
+                            <hr>
+                <div class="row">
+                    <div class="item-option-select">
+                        <h6>Choose Color</h6>
+                        <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-light">
+                            <input type="radio" name="radio_color"> Silver
+                        </label>
+                        <label class="btn btn-light">
+                            <input type="radio" name="radio_color" > Gray
+                        </label>
+                        <label class="btn btn-light active">
+                            <input type="radio" name="radio_color checked"> Gold
+                        </label>
+                        <label class="btn btn-light">
+                            <input type="radio" name="radio_color"> Black
+                        </label>
+                    </div> 
+                </div>
+            </div> <!-- row.// -->
+            <div class="row">
+                <div class="item-option-select">
+                    <h6>Select Size</h6>
+                    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-light">
+                        <input type="radio" name="radio_color"> S
+                      </label>
+                      <label class="btn btn-light active">
+                        <input type="radio" name="radio_color" checked> M
+                      </label>
+                      <label class="btn btn-light">
+                        <input type="radio" name="radio_color"> L
+                      </label>
+                      <label class="btn btn-light">
+                        <input type="radio" name="radio_color"> XL
+                      </label>
+                    </div> 
+                </div>
+            </div> <!-- row.// -->
+            <hr>
+            <a href="./product-detail.html" class="getstarted"> <span class="text">스마트 스토어로 이동하기</span> </a>
+        </article> <!-- product-info-aside .// -->
+                </main> <!-- col.// -->
+            </div> <!-- row.// -->
+        </div> <!-- card.// -->
+        <!-- ============================ COMPONENT 1 END .// ================================= -->
+        
+        <br>
+        
+        <div class="row">
+                    <div class="col-md-9">
+        
+            <header class="section-heading">
+                <h3>Customer Reviews </h3>  
+                
+            </header>
+        
+            <article class="box mb-3">
+                <div class="icontext w-100">
+                    <img src="./images/avatars/avatar1.jpg" class="img-xs icon rounded-circle">
+                    <div class="text">
+                        <span class="date text-muted float-md-right">24.04.2020 </span>  
+                        <h6 class="mb-1">Mike John </h6>
+                        
+                    </div>
+                </div> <!-- icontext.// -->
+                <div class="mt-3">
+                    <p>
+                        Dummy comment Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    </p>	
+                </div>
+            </article>
+        
+            
+        
+            </div> <!-- col.// -->
+        </div> <!-- row.// -->
+        
+        
+        </div> <!-- container .//  -->
+        </section>
+        <!-- ========================= SECTION CONTENT END// ========================= -->
+    
+
+{% endblock %}

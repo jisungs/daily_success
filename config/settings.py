@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-
+                # 카테고리에 있는 컨텍스트 프로세서를 추가 하여 다른 곳에서도 사용가능
                 'category.context_processors.menu_links',
             ],
         },
@@ -115,11 +116,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
